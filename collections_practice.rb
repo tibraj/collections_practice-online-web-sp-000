@@ -35,3 +35,10 @@ end
 def sum_array(array)
   array.inject(0) { |result, element| result + element}
 end
+
+def add_s(array)
+  array.collect_with_index do |element, "s"|
+    if element != array[1]
+      array << element + "s"
+    end
+end
