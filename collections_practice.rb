@@ -41,4 +41,5 @@ def add_s(array)
     if element != array[1]
       array << element + "s"
     end
+  end
 end
