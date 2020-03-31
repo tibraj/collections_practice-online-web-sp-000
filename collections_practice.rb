@@ -37,10 +37,11 @@ def sum_array(array)
 end
 
 def add_s(array)
-  value = "s"
-  array.collect_with_index do |element, value|
-    if element != array[1]
-      array << element + value
+  array.collect do |element|
+    if array[1] == element
+      element
+    else
+      element + "s"
     end
   end
 end
